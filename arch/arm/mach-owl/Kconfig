@@ -25,4 +25,20 @@ config SYS_SOC
         default "s900" if MACH_S900
         default "s700" if MACH_S700
 
+config DISTRO_DEFAULTS
+	default y
+
+config NR_DRAM_BANKS
+	default 1
+
+config SYS_RELOC_GD_ENV_ADDR
+	default y
+
+config SYS_PROMPT
+	string "Shell prompt"
+	default "U-Boot => "
+
+config DISPLAY_BOARDINFO
+	default n
+
 endif
